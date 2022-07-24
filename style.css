@@ -22,6 +22,6 @@ div {
     visibility: hidden;
 }
 
-.root{
+:root{
     --main-bg-color: brown;
 }
