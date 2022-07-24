@@ -63,19 +63,19 @@
             <link rel="stylesheet" type="text/css" href="style.css">
             <script language="javascript">
                 function startTime(){
-                    var today=new Date();
-                    var h=today.getHours();
-                    var m=today.getMinutes();
-                    var s=today.getSeconds();
+                    var today = new Date();
+                    var h = today.getHours();
+                    var m = today.getMinutes();
+                    var s = today.getSeconds();
                     m = checkTime(m);
                     s = checkTime(s);
                     document.getElementById('txt').innerHTML = h+":"+m+":"+s;
-                    t=setTimeout(function(){startTime()},500);
+                    var t = setTimeout(function(){startTime()},500);
                 }
 
                 function checkTime(i){
-                    if (i<10) {
-                        i="0"+i;    //add zero in front of numbers < 10
+                    if (i < 10) {
+                        i = "0" + i;    //add zero in front of numbers < 10
                     }
                     return i;
                 }
@@ -133,7 +133,7 @@
 
         <body onload="startTime()">
             <table>
-                <td height="100%" width="100%" text-align="center" valign="middle">
+                <td height="100%" width="100%" align="center" valign="middle">
                 <h1 id="t"></h1><br>
                 <h2 id="h"></h2>
                 </td>
@@ -141,7 +141,7 @@
         </body>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="text/javascript">
+    <script type="text/javascript">
 
         function dotime(){
             $("body").css({"transition": "all 0.8s", "-webkit-transition": "all 0.8s"});
@@ -174,14 +174,14 @@
 
             document.body.style.background = hex;
 
-            setTimeout(function(){ doTime()}, 1000);
+            setTimeout(function(){ doTime();}, 1000);
         }
 
     </script>
 
     <div style="position: relative; width: 267px; height: 25px; overflow: hidden;">
         <div style="position: absolute; top: -276px; left: -5px">
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/videoseries?list=PLE48A72E42C72D07F&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/videoseries?list=PLE48A72E42C72D07F&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     </body>
