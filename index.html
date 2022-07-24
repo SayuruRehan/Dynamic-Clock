@@ -88,6 +88,7 @@
     <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
+
     <script language="javascript">
         function startTime() {
             var today=new Date();
@@ -100,7 +101,7 @@
             var t = setTimeout(function(){startTime()},500);
     }
     function checkTime(i) {
-        if (i<10) {
+        if (i < 10) {
             i = "0" + i
         };  // add zero in front of numbers < 10
         return i;
@@ -108,65 +109,62 @@
     </script>
      
     <style>
-    
     @media all and (max-width: 1024px) {
-    
-    h1 { 
-        font-family:"Helvetica"; 
-        font-size:40px; 
-        font-weight:300; 
-        color:white; 
-        transition:all 0.6s; 
-        -webkit-transition:all 0.6s;
-    }
-    h2 { 
-        font-family:"Helvetica"; 
-        font-size:20px; 
-        font-weight:300; 
-        color:white; 
-        transition:all 0.6s; 
-        -webkit-transition:all 0.6s;
-    }
-    
-    iframe { 
-        display:none;
-    }
-    
+        h1 { 
+            font-family:"Helvetica"; 
+            font-size:40px; 
+            font-weight:300; 
+            color:white; 
+            transition:all 0.6s; 
+            -webkit-transition:all 0.6s;
+        }
+        
+        h2 { 
+            font-family:"Helvetica"; 
+            font-size:20px; 
+            font-weight:300; 
+            color:white; 
+            transition:all 0.6s; 
+            -webkit-transition:all 0.6s;
+        }
+        
+        iframe { 
+            display:none;
+        }
     }
     
     @media all and (min-width: 1024px) {
-    
-    h1 { 
-        font-family:"Helvetica"; 
-        font-size:120px; 
-        font-weight:300; 
-        color:white; 
-        transition:all 0.6s; 
-        -webkit-transition:all 0.6s;
-    }
-    h2 { 
-        font-family:"Helvetica"; 
-        font-size:30px; 
-        font-weight:300; 
-        color:white; 
-        transition:all 0.6s; 
-        -webkit-transition:all 0.6s;
-    }
-    
-    iframe { 
-        position:absolute; 
-        bottom:-30px; 
-        left:50%; 
-        margin-left:-25px; 
-        opacity:0.1; 
-        transition:all 0.4s; 
-        -webkit-transition:all 0.4s; 
-        width:50px;
-    }
-    iframe:hover {
-        opacity:1;
-    }
-    
+        h1 { 
+            font-family:"Helvetica"; 
+            font-size:120px; 
+            font-weight:300; 
+            color:white; 
+            transition:all 0.6s; 
+            -webkit-transition:all 0.6s;
+        }
+        h2 { 
+            font-family:"Helvetica"; 
+            font-size:30px; 
+            font-weight:300; 
+            color:white; 
+            transition:all 0.6s; 
+            -webkit-transition:all 0.6s;
+        }
+        
+        iframe { 
+            position:absolute; 
+            bottom:-30px; 
+            left:50%; 
+            margin-left:-25px; 
+            opacity:0.1; 
+            transition:all 0.4s; 
+            -webkit-transition:all 0.4s; 
+            width:50px;
+        }
+
+        iframe:hover {
+            opacity:1;
+        }
     }
     
     table { 
@@ -178,16 +176,13 @@
     }
     
     </style>
-      
     </head>
     
     <body onload="startTime()">
-    
-    <table><td height="100%" width="100%" align="center" valign="middle">
-    <h1 id="t"></h1><br>
-    <h2 id="h"></h2>
-    </td></table>
-    
+        <table><td height="100%" width="100%" align="center" valign="middle">
+        <h1 id="t"></h1><br>
+        <h2 id="h"></h2>
+        </td></table>
     </body>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -195,7 +190,6 @@
     
     
     function dotime(){
-        
         $("body").css({"transition": "all 0.8s", "-webkit-transition": "all 0.8s"});
         
         var d = new Date();
